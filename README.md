@@ -1,22 +1,22 @@
 # Smart Events 
 
-**Smart Events** es un sistema web desarrollado para la **Evaluación N°3**. Permite la gestión de eventos e inscripciones, la administración de usuarios y el registro de participantes mediante una API validada de forma robusta en el servidor.
+**Smart Events** es un sistema web diseñado para la gestión de eventos e inscripciones. Permite la administración de usuarios y el registro de participantes mediante una API validada de forma robusta en el servidor.
 
-## Tecnologías Utilizadas
+##  Tecnologías Utilizadas
 
 * **Framework:** Nuxt 3
 * **ORM:** Prisma
 * **Base de Datos:** MySQL / MariaDB
 * **Lenguaje:** TypeScript
 
-## Requisitos Previos
+##  Requisitos Previos
 
 Asegúrate de tener instalado lo siguiente en tu entorno local antes de iniciar:
 * Node.js (v18 o superior)
 * npm, yarn o pnpm
 * Servidor de base de datos MySQL o MariaDB en ejecución
 
-## Instalación y Configuración
+##  Instalación y Configuración
 
 Sigue estos pasos para levantar el entorno de desarrollo:
 
@@ -50,19 +50,15 @@ Sigue estos pasos para levantar el entorno de desarrollo:
    ```
    La aplicación estará disponible en `http://localhost:3000`.
 
-## Estructura de Datos
+##  Estructura de Datos
 
 El proyecto utiliza `globalThis` en `prisma.ts` para optimizar la conexión a la base de datos y maneja las siguientes entidades principales:
 * **Usuario:** Almacena los perfiles del sistema.
 * **Evento:** Detalla la información de cada actividad.
 * **Inscrito:** Gestiona la relación y los registros entre los usuarios y los eventos.
 
-## Endpoints de la API
+##  Endpoints de la API
 
 Las rutas del servidor procesan, validan y normalizan la información enviada:
 * `POST /api/eventos` - Creación de nuevos eventos.
 * `POST /api/inscripciones` - Procesamiento de registros de usuarios en eventos.
-
-## Desarrollador
-
-Ignacio Morales
